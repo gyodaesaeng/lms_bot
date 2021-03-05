@@ -59,3 +59,4 @@ for i in range(len(subjects)):
                 driver.find_element(By.ID, 'close_').click()
         driver.get(lms_url+'/ilos/st/course/submain_form.acl')
     driver.get(lms_url+'/ilos/main/main_form.acl')
+driver.quit()
