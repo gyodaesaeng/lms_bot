@@ -67,5 +67,6 @@ with open('userInfo.json', encoding='utf-8') as json_file:
 login()
 try:
     listen_class()
+    print("every classes are listened.")
 finally:
     driver.quit()
