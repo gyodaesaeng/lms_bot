@@ -55,8 +55,12 @@ for i in range(len(subjects)):
             if last > 0:
                 sleep(5)
                 e.find_element(By.XPATH, './/span').click()
-                sleep(last + 10)
-                driver.find_element(By.ID, 'close_').click()
+                try:
+                    alert = driver.switch_to_alert()
+                    alert.dismiss()
+                except:
+                    sleep(last + 10)
+                    driver.find_element(By.ID, 'close_').click()
         driver.get(lms_url+'/ilos/st/course/submain_form.acl')
     driver.get(lms_url+'/ilos/main/main_form.acl')
 driver.quit()
