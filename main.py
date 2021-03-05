@@ -53,6 +53,7 @@ for i in range(len(subjects)):
             print(e.find_element(By.XPATH, './/div[1]').text)
             print(last)
             if last > 0:
+                sleep(5)
                 e.find_element(By.XPATH, './/span').click()
                 sleep(last + 10)
                 driver.find_element(By.ID, 'close_').click()
