@@ -48,3 +48,7 @@ you can update it using below command.
 ```bash
 git pull
 ```
+
+## Bug report
+
+If you find a bug, please write the issue at [this site](https://github.com/gyodaesaeng/lms_bot/issues).
