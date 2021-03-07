@@ -55,7 +55,7 @@ def listen_class():
                     e.find_element(By.XPATH, './/span').click()
                     try:
                         sleep(1)
-                        alert = driver.switch_to_alert()
+                        alert = driver.switch_to.alert()
                         alert.dismiss()
                         print('학습인정기간이 지나 출석시간으로 인정되지 않습니다.')
                     except:
