@@ -29,14 +29,19 @@ def login():
 
 
 def listen_class():
+    sleep(1)
     subjects = driver.find_elements(By.CLASS_NAME, 'sub_open')
     for i in range(len(subjects)):
+        sleep(1)
         subjects = driver.find_elements(By.CLASS_NAME, 'sub_open')
         subjects[i].click()
+        sleep(1)
         weeks = driver.find_elements(By.CLASS_NAME, 'wb-on')
         for j in range(len(weeks)):
+            sleep(1)
             weeks = driver.find_elements(By.CLASS_NAME, 'wb-on')
             weeks[j].find_element(By.CLASS_NAME, 'wb-week-on').click()
+            sleep(1)
             elements = driver.find_elements(By.XPATH, '//div/ul/li[1]/ol/li[5]/div/div')
             for k in range(len(elements)):
                 elements = driver.find_elements(By.XPATH, '//div/ul/li[1]/ol/li[5]/div/div')
@@ -46,10 +51,10 @@ def listen_class():
                 print(e.find_element(By.XPATH, './/div[1]').text)
                 print(last)
                 if last > 0:
-                    sleep(5)
+                    sleep(1)
                     e.find_element(By.XPATH, './/span').click()
                     try:
-                        alert = driver.switch_to_alert()
+                        alert = driver.Alart()
                         alert.dismiss()
                     except:
                         sleep(last + 10)
