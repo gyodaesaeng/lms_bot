@@ -2,8 +2,8 @@
 
 This is auto bot for Learning Management System called e-class system.
 
-This is based on the environment of Chuncheon National University of Education.  
-so this may not be suitable for other universities' systems.
+It is based on the environment of Chuncheon National University of Education.  
+so it may not be suitable for other universities' systems.
 
 ## Requirements
 
