@@ -57,9 +57,11 @@ def listen_class():
                         sleep(1)
                         alert = driver.switch_to_alert()
                         alert.dismiss()
+                        print('학습인정기간이 지나 출석시간으로 인정되지 않습니다.')
                     except:
                         sleep(last + 10)
                         driver.find_element(By.ID, 'close_').click()
+                        print('출석 완료')
             driver.get(lms_url + '/ilos/st/course/submain_form.acl')
         driver.get(lms_url + '/ilos/main/main_form.acl')
 
