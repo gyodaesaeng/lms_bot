@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a323bad2-9d94-4b63-8c4f-75544ef1b62d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/userInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/userInfo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,49 @@
       <option name="project" value="LOCAL" />
       <updated>1614940047772</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change userInfo.json">
+      <created>1614940698496</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614940698496</updated>
+    </task>
+    <task id="LOCAL-00004" summary="bug fix">
+      <created>1614947565708</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614947565708</updated>
+    </task>
+    <task id="LOCAL-00005" summary="bug fix">
+      <created>1614947723524</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614947723524</updated>
+    </task>
+    <task id="LOCAL-00006" summary="bug fix">
+      <created>1614949399133</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614949399133</updated>
+    </task>
+    <task id="LOCAL-00007" summary="bug fix">
+      <created>1614950035874</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614950035874</updated>
+    </task>
+    <task id="LOCAL-00008" summary="bug fix">
+      <created>1614950280596</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614950280596</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,10 +137,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add README and gitignore" />
     <MESSAGE value="change README" />
-    <option name="LAST_COMMIT_MESSAGE" value="change README" />
+    <MESSAGE value="change userInfo.json" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
 </project>
