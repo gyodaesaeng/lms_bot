@@ -54,6 +54,7 @@ def listen_class():
                     sleep(1)
                     e.find_element(By.XPATH, './/span').click()
                     try:
+                        sleep(1)
                         alert = driver.Alart()
                         alert.dismiss()
                     except:
