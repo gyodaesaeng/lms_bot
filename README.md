@@ -21,7 +21,7 @@ pip3 install selenium
 ## Installation
 
 for install it, you should install `git`.  
-Git is downloadable at [this site](https://git-scm.com/downloads).
+Git is downloadable at [this site](https://git-scm.com/downloads).  
 After you install git, run this command where you want to install it. 
 ```bash
 git clone "https://github.com/gyodaesaeng/lms_bot.git"
