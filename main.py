@@ -62,6 +62,12 @@ def listen_class():
                         sleep(last + 10)
                         driver.find_element(By.ID, 'close_').click()
                         print('출석 완료')
+                        try:
+                            alert = driver.switch_to.alert
+                            alert.dismiss()
+                            print('alert occur')
+                        except:
+                            print('no alert')
             driver.get(lms_url + '/ilos/st/course/submain_form.acl')
         driver.get(lms_url + '/ilos/main/main_form.acl')
 
