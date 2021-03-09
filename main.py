@@ -32,7 +32,6 @@ def login():
 
 
 def listen_class():
-    sleep(1)
     subjects = driver.find_elements(By.CLASS_NAME, 'sub_open')
     for i in range(len(subjects)):
         subjects = driver.find_elements(By.CLASS_NAME, 'sub_open')
@@ -41,11 +40,9 @@ def listen_class():
         for j in range(len(weeks)):
             weeks = driver.find_elements(By.CLASS_NAME, 'wb-on')
             weeks[j].find_element(By.CLASS_NAME, 'wb-week-on').click()
-            elements = driver.find_elements(By.XPATH, '//div/ul/li[1]/ol/li[5]/div/div')
+            elements = driver.find_elements(By.XPATH, '//div/ul/li[1]/ol/li[last()]/div/div')
             for k in range(len(elements)):
-                wait = WebDriverWait(driver, 10)
-                wait.until(EC.presence_of_element_located((By.XPATH, '//div/ul/li[1]/ol/li[5]/div/div')))
-                element = driver.find_elements(By.XPATH, '//div/ul/li[1]/ol/li[5]/div/div')[k]
+                element = driver.find_elements(By.XPATH, '//div/ul/li[1]/ol/li[last()]/div/div')[k]
                 times = re.split(" / ", element.find_element(By.XPATH, './/div[3]').text)
                 last = get_second(times[1]) - get_second(times[0])
                 print(element.find_element(By.XPATH, './/div[1]').text)
@@ -70,6 +67,7 @@ def listen_class():
 
 
 driver = webdriver.Chrome('./chromedriver')
+driver.implicitly_wait(10)
 with open('userInfo.json', encoding='utf-8') as json_file:
     userInfoJson = json.load(json_file)
     usr_id = userInfoJson['id']
